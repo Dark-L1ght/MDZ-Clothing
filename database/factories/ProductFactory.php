@@ -11,6 +11,6 @@ $factory->define(Product::class, function (Faker $faker) {
         'category_id' => $faker->numberBetween(1, 5),
         'price' => $faker->numberBetween(100000, 1000000),
         'desc' => $faker->paragraph($nbSentences = 2, $variableNbSentences = true),
-        'image' => '/storage/images/product.jpg'
+        'image' => '/images/product.jpg'
     ];
 });

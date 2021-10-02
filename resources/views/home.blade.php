@@ -14,7 +14,7 @@
   
 <div class="row justify-content-center">
   <div class="col-md-4">
-      <img class="img-profile" src="https://pwco.com.sg/wp-content/uploads/Generic-Profile-Placeholder-v3.png" alt="no-image">
+      <img class="img-profile" src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="no-image">
   </div>
   <div class="offset-md-2 col-md-6">
       <div class="content">
