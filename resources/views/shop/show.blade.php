@@ -1,7 +1,7 @@
 @extends('template.user')
 
 @section('title')
-  My Ecommerce    
+  MDZ Clothing    
 @endsection
 
 @section('style')
@@ -15,17 +15,17 @@
   <div class="row">
     <div class="wrapper">
       <div class="col-lg-4" id="picture">
-      <img src="{{asset($product->image)}}" alt="" height="200" width="200">
+      <img src="{{asset($product->image)}}" alt="" height="350" width="350">
       </div>
     </div>
     <div class="col-lg-4 desc">
-      <h4 id="description">Description</h4>
+      <h4 id="description">Description :</h4>
     <p>{{$product->desc}}</p>
     </div>
     <div class="col-lg-4">
       <div class="kartu">
         <p>Harga</p>
-      <h2>Rp{{number_format($product->price)}}</h2>
+      <h2>Rp {{number_format($product->price)}}</h2>
         <form action="/cart/store" method="POST">
           @csrf
         <input type="hidden" value="{{$product->id}}" name="product_id">
@@ -49,7 +49,7 @@
       <a href="#">ABOUT</a>
       <a href="#">FAQ</a>
     </p>
-    <p>CodingStudio &copy; 2020</p>
+    <p>MDZ Clothing &copy; 2021</p>
   </div>
 
 </footer>

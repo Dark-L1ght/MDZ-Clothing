@@ -43,14 +43,14 @@
             <div class="top">
                 <p class="item-name">{{$cart->product->name}}</p>
                 <div class="top-right">
-                  <p class="">Rp{{number_format($cart->product->price)}}</p>
+                  <p class="">Rp {{number_format($cart->product->price)}}</p>
                   <select name="qty" class="quantity" data-item="{{$cart->id}}">
                     @for ($i = 1; $i <= 10; $i++)
                         <option value="{{$i}}" {{$cart->qty == $i ? 'selected': ''}}>{{$i}}</option>
                     @endfor
                     </select>
                     <!-- Subtotal -->
-                <p class="total-item">Rp{{number_format($cart->product->price * $cart->qty)}}</p>
+                <p class="total-item">Rp {{number_format($cart->product->price * $cart->qty)}}</p>
                 </div>
             </div>
             <hr class="mt-2 mb-2">

@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>A simple, clean, and responsive HTML invoice template</title>
+		<title>MDZ Clothing Invoice</title>
 
 		<!-- Favicon -->
 		<link rel="icon" href="./images/favicon.png" type="image/x-icon" />
@@ -169,7 +169,7 @@
 				<tr class="item">
 					<td>{{$loop->iteration}}</td>
 					<td>{{$cart->product->name}}</td>
-					<td>Rp{{number_format($cart->product->price)}}</td>
+					<td>Rp {{number_format($cart->product->price)}}</td>
 					<td>{{$cart->qty}}</td>
 					<td>Rp{{number_format($cart->qty * $cart->product->price)}}</td>
 				</tr>
@@ -182,7 +182,7 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				<td>Total Pemesanan: Rp{{number_format($total)}}</td>
+				<td>Total Pemesanan: Rp {{number_format($total)}}</td>
 			</table>
 		</div>
 	</body>

@@ -80,7 +80,7 @@
 					<img src="{{asset($product->image)}}" alt="nopic" height="150" width="150">
 					</a>
 					<p class="product-name"><a href="#">{{$product->name}}</a></p>
-				    <p class="product-price">Rp{{number_format($product->price)}}</p>
+				    <p class="product-price">Rp {{number_format($product->price)}}</p>
 				</div>
 				@endforeach
 			</div>
