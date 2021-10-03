@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap');
 
 @font-face {
   font-family: "Helvetica-Neue";
-  src: url("../asset/font/HelveticaNeue-Thin.otf");
+  src: url("/font/HelveticaNeue-Thin.otf");
 }
 
 html,
@@ -22,7 +23,7 @@ body {
 }
 
 .navbar-brand {
-  font-family: "Helvetica", "sans-serif";
+  font-family: 'Spartan', sans-serif;
   font-weight: bold;
   font-style: italic;
   margin-left: 15px;
@@ -64,7 +65,7 @@ body {
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: #ff4f77;
+  background: #000000;
   height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -91,8 +92,8 @@ body {
 
 hr {
   margin: 0;
-  border: 1px solid #ff4f77;
-  background: #ff4f77;
+  border: 1px solid #FF0075;
+  background: #FF0075;
 }
 
 .title {

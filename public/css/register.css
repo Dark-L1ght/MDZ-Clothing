@@ -32,7 +32,7 @@ body {
 hr {
     width: 50%;
     margin-bottom: 35px;
-    background-color: #ff4f77;
+    background-color: #FF0075;
     height: 2px;
 }
 
@@ -45,7 +45,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #ff4f77;
+    color: #FF0075;
 }
 
 .login-form .input,
@@ -67,7 +67,7 @@ textarea {
     outline: 0;
     display: block;
     margin: 0 auto;
-    background: #ff4f77;
+    background: #FF0075;
     width: 80%;
     border: 0;
     padding: 15px;

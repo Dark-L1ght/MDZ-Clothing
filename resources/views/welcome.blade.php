@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>My E-Commerce</title>
+	<title>MDZ CLothing</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,10 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 </head>
 
-<body>
+<body >
     @guest
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">My E-Commerce</a>
+		<a class="navbar-brand" href="{{ url('shop') }}">MDZ Clothing</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -37,7 +37,7 @@
     </nav>
     @else
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">My E-Commerce</a>
+            <a class="navbar-brand" href="{{ url('shop') }}">MDZ Clothing</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -67,10 +67,10 @@
         </nav>
         @endguest
 	<div class="content">
-		<h1 class="title">E - Commerce</h1>
-		<h3>The Best Place for Any Solutions</h3>
+		<h1 class="title">MDZ Clothing</h1>
+		<h3>The Best Clothing Store In Serang!</h3>
 	</div>
-	<div class="container">
+	<div class="container style="background-color: #EEEEEE;">
 		<div class="products">
 			<h1 id="featured">Featured Products</h1>
 			<div class="row list-product">
@@ -85,7 +85,7 @@
 				@endforeach
 			</div>
 		</div>
-		<a href="" class="more">View More Products ></a>
+		<a href="{{ url('shop') }}" class="more">View More Products ></a>
 	</div>
 
 	<footer class="footer-distributed">
@@ -102,7 +102,7 @@
 				<a href="#">ABOUT</a>
 				<a href="#">FAQ</a>
 			</p>
-			<p>CodingStudio &copy; 2018</p>
+			<p>MDZ Clothing &copy; 2021</p>
 		</div>
 
     </footer>
