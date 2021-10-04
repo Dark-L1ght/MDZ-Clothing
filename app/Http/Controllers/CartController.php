@@ -44,4 +44,11 @@ class CartController extends Controller
             'success' => true
         ]);
     }
+
+    public function delete($id)
+    {
+        $data=Cart::find($id);
+        $data->delete();
+        return redirect()->back()->with('message','Produk berhasil dihapus');
+    }
 }

@@ -37,7 +37,7 @@
 <div class="cart">
     <div class="row">
         <div class="col-lg-3">
-        <img class="img-cart" src="{{asset('/images/product.jpg')}}" alt="">
+        <img class="img-cart" src="{{$cart->product->image}}" alt="">
         </div>
         <div class="col-lg-9">
             <div class="top">
@@ -64,7 +64,8 @@
                     </div>
                     <div class="col-lg-2">
                     <!-- delete cart -->
-                    <form action="" method="POST">
+                    <form action="{{ url('/cart',$cart->id) }}" method="POST">
+                            @method('delete')
                             @csrf
                             <button type="submit" class="btn btn-danger">Remove</button>
                         </form>

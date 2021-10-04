@@ -10,8 +10,6 @@
 
 @section('content')
 <div class="container">
-  <!-- Success Message -->
-  
 <div class="row justify-content-center">
   <div class="col-md-4">
       <img class="img-profile" src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="no-image">

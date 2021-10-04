@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -32,4 +33,28 @@ Route::post('/cart/store', 'CartController@store');
 
 Route::patch('/cart/{id}', 'CartController@update');
 
+Route::delete('/cart/{id}', 'CartController@delete');
+
 Route::post('/checkout', 'CheckoutController@store');
+
+Route::get('/admin', 'AdminController@index');
+
+Route::get('/add', 'AdminController@addproduct');
+
+Route::post('/tambahproduk', 'AdminController@add');
+
+Route::get('/product', 'AdminController@view');
+
+Route::get('/product/update/{id}', 'AdminController@updateview');
+
+Route::delete('/product/{id}', 'AdminController@deleteproduct');
+
+Route::post('/product/update/{id}', 'AdminController@updateproduct');
+
+Route::get('/user', 'AdminController@viewuser');
+
+Route::delete('/user/{id}', 'AdminController@deleteuser');
+
+Route::get('user/update/{id}', 'AdminController@updateuserview');
+
+Route::post('user/update/{id}', 'AdminController@updateuser');
