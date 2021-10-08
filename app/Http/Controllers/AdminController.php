@@ -33,7 +33,7 @@ class AdminController extends Controller
         
         //Save Data
         $data->save();
-        return redirect()->back()->with('message','Produk berhasil Ditambahkan');
+        return redirect()->back()->with('success','Produk berhasil Ditambahkan');
 
     }
     
@@ -47,7 +47,7 @@ class AdminController extends Controller
     {
         $data=Product::find($id);
         $data->delete();
-        return redirect()->back()->with('message','Product Deleted');
+        return redirect()->back()->with('delete','Product Deleted');
     }
 
     public function updateview($id)

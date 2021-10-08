@@ -1,4 +1,5 @@
 @extends('template.user')
+@include('sweetalert::alert')
 
 @section('title')
     Cart
