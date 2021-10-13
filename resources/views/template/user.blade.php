@@ -18,6 +18,12 @@
                 </button>
       
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link underline" href="{{ url('shop') }}">Shop</a>
+                      </li>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item">
                             <a class="nav-link underline" href="/cart"><i class="fa fa-shopping-cart"></i> Cart</a>

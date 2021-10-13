@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('bootstrap-4.1.3/dist/css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('bower_components/font-awesome/css/font-awesome.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+    <link rel="icon" href="{{ asset('images/favicon.png') }}" sizes="16x16" type="image/png">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                     <a class="nav-link underline" href="">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link underline" href="">Our Product</a>
+                    <a class="nav-link underline" href="/shop">Our Product</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link button" href="/login">Sign In</a>
@@ -45,6 +46,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link underline" href="/shop">Shop</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link underline" href="/cart"><i class="fa fa-shopping-cart"></i> Cart</a>
                 </li>
@@ -78,10 +82,10 @@
             <div class="row list-product">
                 @foreach ($products as $product)
                 <div class="col-lg-4 col-md-6">
-                    <a href="">
+                    <a href="/shop/detail/{{$product->id}}">
                         <img src="{{asset($product->image)}}" alt="nopic" height="150" width="150">
                     </a>
-                    <p class="product-name"><a href="#">{{$product->name}}</a></p>
+                    <p class="product-name"><a href="/shop">{{$product->name}}</a></p>
                     <p class="product-price">Rp {{number_format($product->price)}}</p>
                 </div>
                 @endforeach
