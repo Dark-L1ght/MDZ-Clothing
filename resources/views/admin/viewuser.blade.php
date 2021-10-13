@@ -192,6 +192,7 @@
                       <div class="card-body">
                         <h4 class="card-title">Tabel User</h4>
                         <p class="card-description"> Tabel ini berisi data user dan untuk melakukan edit dan hapus data </p>
+                        <a class="btn btn-success" href="{{ url('/user/print_pdf') }}">Print PDF</a>
                         <div class="table-responsive">
                             
                           <table class="table table-bordered">

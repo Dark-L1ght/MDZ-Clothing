@@ -5,6 +5,7 @@ use App\Product;
 use App\User;
 use Illuminate\Http\Request;
 use Symfony\Component\VarDumper\Cloner\Data;
+use PDF;
 
 class AdminController extends Controller
 {
@@ -78,6 +79,15 @@ class AdminController extends Controller
     {
         $users=User::all();
         return view('admin.viewuser',compact('users'));
+    }
+
+    public function print_pdf()
+    {
+        $users=User::all();
+
+        $pdf = PDF::loadview('admin.pdf.user_pdf',compact('users'));
+        return $pdf->download('laporan-user.pdf');
+
     }
 
     public function deleteuser($id)

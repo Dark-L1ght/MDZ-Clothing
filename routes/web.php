@@ -53,6 +53,8 @@ Route::post('/product/update/{id}', 'AdminController@updateproduct');
 
 Route::get('/user', 'AdminController@viewuser');
 
+Route::get('/user/print_pdf', 'AdminController@print_pdf');
+
 Route::delete('/user/{id}', 'AdminController@deleteuser');
 
 Route::get('user/update/{id}', 'AdminController@updateuserview');
